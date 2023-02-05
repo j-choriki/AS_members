@@ -1,0 +1,198 @@
+main{
+    height: 90vh;
+    padding-top: 20%;
+    font-size: 1.5rem;
+    section{
+        h2 {
+            text-align: center; 
+            position: relative;
+            padding: 1rem .5rem;
+            width: 60%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+          
+          h2:before,
+          h2:after {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            content: '';
+            background-image: -webkit-gradient(linear, right top, left top, from(#00aaeb), to(#1e4584));
+            background-image: -webkit-linear-gradient(right, #00aaeb 0%, #1e4584 100%);
+            background-image: linear-gradient(to left, #00aaeb 0%, #1e4584 100%);
+          }
+          
+          h2:before {
+            top: 0;
+          }
+          
+          h2:after {
+            bottom: 0;
+        }
+
+        .btn-parent{
+            height: 3rem;
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 20px;
+            padding-top: 10px;
+            font-weight: bold;
+            background:linear-gradient(#00aaeb,#1e4584) ;
+            transform: skew(-15deg);
+            a{
+                padding: 4% 28%;
+                color: white;
+            }
+        }
+    }
+
+    .btn-parent{
+      height: 3rem;
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 20px;
+      padding-top: 10px;
+      font-weight: bold;
+      background:linear-gradient(#00aaeb,#1e4584) ;
+      transform: skew(-15deg);
+      a{
+          padding: 4% 28%;
+          color: white;
+      }
+  }
+  
+}
+
+#openModal{
+  position: fixed;
+  bottom: 20%;
+  right: 10%;
+  
+  i{
+    font-size:2.3rem;
+    padding: 30%;
+    border-radius: 20px;
+    background:linear-gradient(#00aaeb,#1e4584) ;
+    color: #fff;
+  }
+}
+
+.btn-parent{
+  height: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 89px;
+  margin-top: 20%;
+  padding-top: 10px;
+  font-weight: bold;
+  background:linear-gradient(#00aaeb,#1e4584) ;
+  transform: skew(-15deg);
+  a{
+      color: white;
+      padding: 7% 15%; 
+  }
+}
+
+/* ==================================
+モーダルCSS 
+================================== */
+
+/* 画面全面の背景色の適用 */
+.modalArea {
+  display: none;
+  position: fixed;
+  z-index: 10; /*サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* 全面背景のモーダル解除のエリア */
+  .modalBg {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(30,30,30,0.9);
+  }
+
+  /* モーダルウィンドウ */
+  .modalWrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform:translate(-50%,-50%);
+      width: 50%;
+      max-width: 400px;
+      height: auto;
+      padding: 10px 30px;
+      background-color: #fff;
+
+      .modalContents{
+          h2{
+            width: 100px;
+            text-align: center;
+            font-size: 1rem;
+              
+          }
+
+          form{
+            div{
+              margin :20px 0;
+              input{
+                width: 150px;
+              }
+            }
+            .btn-parent2{
+              height: 2rem;
+              width: 100px;
+              text-align: center;
+              font-size: 1rem;
+              margin-left: 10px;              
+              font-weight: bold;
+              background:linear-gradient(#00aaeb,#1e4584) ;
+              transform: skew(-15deg); 
+              color: #fff;
+            }
+          }
+      }
+
+      /* モーダル解除のアイコン */
+      .closeModal {
+          position: absolute;
+          top: 0.5rem;
+          right: 1rem;
+          cursor: pointer;
+      }
+  }
+}
+
+
+
+/* ==================================
+モーダルfin 
+================================== */
+
+
+
+// 以下webサイトのデザイン
+@media screen and ( min-width:1024px ){
+  body{
+      main{
+        background: transparent;
+        padding: 0;
+        h2{
+          // margin:100px auto;
+          width: 300px;
+        }
+        #form{
+          text-align:center;
+        }
+        .btn-parent{
+          width: 400px;
+          margin: 30px auto;
+        }
+      }
+      
+    }
+}

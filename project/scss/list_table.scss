@@ -1,0 +1,74 @@
+header{
+    h1{
+        font-size:1.8rem;
+        margin-top:6px;
+    }
+}
+
+main{
+    height: 90vh;
+    padding-top: 20%;
+    font-size: 1.5rem;
+    section{
+        h2{
+            span{
+                display: block;
+            }
+        }
+        .btn-parent{
+            height: 3rem;
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 20px;
+            padding-top: 10px;
+            font-weight: bold;
+            background:linear-gradient(#00aaeb,#1e4584) ;
+            transform: skew(-15deg);
+            a{
+                
+                color: white;
+            }
+        }
+    }
+}
+
+
+// 以下webサイトのデザイン
+@media screen and ( min-width:1024px ){
+    main{
+        height: 0;
+        background: transparent;
+        padding: 0;
+       section{
+        h2{
+            margin:100px auto;
+            width: 300px;
+            &::before{
+                content:initial;
+            }
+            &::after{
+                content:initial;
+            }
+            border-top: 4px solid #00aaeb;
+            border-bottom: 4px solid #00aaeb;
+            border-image: linear-gradient(to left, #00aaeb 0%, #1e4584 100%);
+            border-image-slice: 1;    
+        }
+        
+        .btn-parent{
+            margin: 0;
+            width: 400px;
+            margin: 25px auto;
+          
+        }
+       }
+    }
+    footer{
+      background:linear-gradient(#00aaeb,#1e4584);
+      bottom: 0;
+      height:40px;
+      line-height: 40px;
+    }
+}
+
+

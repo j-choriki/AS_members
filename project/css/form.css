@@ -1,0 +1,186 @@
+@charset "UTF-8";
+main {
+  height: 90vh;
+  padding-top: 20%;
+  font-size: 1.5rem;
+}
+
+main section h2 {
+  text-align: center;
+  position: relative;
+  padding: 1rem .5rem;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+main section h2:before,
+main section h2:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: '';
+  background-image: linear-gradient(to left, #00aaeb 0%, #1e4584 100%);
+}
+
+main section h2:before {
+  top: 0;
+}
+
+main section h2:after {
+  bottom: 0;
+}
+
+main section .btn-parent {
+  height: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px;
+  padding-top: 10px;
+  font-weight: bold;
+  background: linear-gradient(#00aaeb, #1e4584);
+  transform: skew(-15deg);
+}
+
+main section .btn-parent a {
+  padding: 4% 28%;
+  color: white;
+}
+
+main .btn-parent {
+  height: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px;
+  padding-top: 10px;
+  font-weight: bold;
+  background: linear-gradient(#00aaeb, #1e4584);
+  transform: skew(-15deg);
+}
+
+main .btn-parent a {
+  padding: 4% 28%;
+  color: white;
+}
+
+#openModal {
+  position: fixed;
+  bottom: 20%;
+  right: 10%;
+}
+
+#openModal i {
+  font-size: 2.3rem;
+  padding: 30%;
+  border-radius: 20px;
+  background: linear-gradient(#00aaeb, #1e4584);
+  color: #fff;
+}
+
+.btn-parent {
+  height: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 89px;
+  margin-top: 20%;
+  padding-top: 10px;
+  font-weight: bold;
+  background: linear-gradient(#00aaeb, #1e4584);
+  transform: skew(-15deg);
+}
+
+.btn-parent a {
+  color: white;
+  padding: 7% 15%;
+}
+
+/* ==================================
+モーダルCSS 
+================================== */
+/* 画面全面の背景色の適用 */
+.modalArea {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  /*サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* 全面背景のモーダル解除のエリア */
+  /* モーダルウィンドウ */
+}
+
+.modalArea .modalBg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+.modalArea .modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+  padding: 10px 30px;
+  background-color: #fff;
+  /* モーダル解除のアイコン */
+}
+
+.modalArea .modalWrapper .modalContents h2 {
+  width: 100px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.modalArea .modalWrapper .modalContents form div {
+  margin: 20px 0;
+}
+
+.modalArea .modalWrapper .modalContents form div input {
+  width: 150px;
+}
+
+.modalArea .modalWrapper .modalContents form .btn-parent2 {
+  height: 2rem;
+  width: 100px;
+  text-align: center;
+  font-size: 1rem;
+  margin-left: 10px;
+  font-weight: bold;
+  background: linear-gradient(#00aaeb, #1e4584);
+  transform: skew(-15deg);
+  color: #fff;
+}
+
+.modalArea .modalWrapper .closeModal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+/* ==================================
+モーダルfin 
+================================== */
+@media screen and (min-width: 1024px) {
+  body main {
+    background: transparent;
+    padding: 0;
+  }
+  body main h2 {
+    width: 300px;
+  }
+  body main #form {
+    text-align: center;
+  }
+  body main .btn-parent {
+    width: 400px;
+    margin: 30px auto;
+  }
+}
+/*# sourceMappingURL=form.css.map */

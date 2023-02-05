@@ -1,0 +1,110 @@
+$color:linear-gradient(#00aaeb,#1e4584) ;
+
+main{
+    height: 0vh;
+    background: transparent;
+    h2{
+       
+        margin: 50px auto;
+        font-size: 1.5rem;
+        &::before{
+            content:initial;
+        }
+        &::after{
+            content:initial;
+        }
+        border-top: 4px solid #00aaeb;
+        border-bottom: 4px solid #00aaeb;
+        border-image: linear-gradient(to left, #00aaeb 0%, #1e4584 100%);
+        border-image-slice: 1;
+    }
+    table{
+        font-size:0.7rem;
+        // border-collapse: separate;
+        border-collapse:collapse;
+        margin: 0 auto;
+        th{
+            font-size: 0.6rem;
+            text-align: center;
+            padding: 5px 0;
+            background: $color;
+            color: #fff;    
+            
+        }
+        tr{
+            td{ 
+                text-align: center;
+                padding:3px;
+                margin: 0px;
+                border-bottom: 1px solid rgb(151, 148, 148);
+            }
+        }
+    }
+    .table_sticky {
+        display: block;
+        overflow-y: scroll;
+        height: calc(80vh/2);
+        
+        thead {
+            th{
+                position: sticky;
+                top: 0;
+                z-index: 1;
+            }
+        }
+    }
+
+}
+.btn-parent{
+    height: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 60px;
+    margin-top: 40px;    
+    padding-top: 5px;
+    font-weight: bold;
+    background:linear-gradient(#00aaeb,#1e4584) ;
+    transform: skew(-15deg);
+    a{
+        color: white;
+        padding:5px 53px;
+    }
+}
+
+@media screen and ( min-width:1024px ){
+    main{
+        background: transparent;
+        section{
+            h2{
+                 width: 550px;
+            }
+            table{
+                margin: 0 30%;
+                border-collapse: collapse;
+                font-size:1.1rem;
+                color:#fff;
+                tr{
+                    th{
+                        background: $color;
+                        padding: 10px;
+                        font-size: 0.9rem;
+                    }
+                    td{
+                        height: 2rem;
+                        color: black;
+                        border-bottom: 1px solid rgb(151, 148, 148);
+                        padding: 10px 0;
+                    }
+                }
+            }
+            .btn-parent{
+                width: 550px;
+                margin: 30px auto;
+                a{
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+}

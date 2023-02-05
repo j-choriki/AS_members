@@ -1,0 +1,105 @@
+main {
+  height: 0vh;
+  background: transparent;
+}
+
+main h2 {
+  margin: 50px auto;
+  font-size: 1.5rem;
+  border-top: 4px solid #00aaeb;
+  border-bottom: 4px solid #00aaeb;
+  border-image: linear-gradient(to left, #00aaeb 0%, #1e4584 100%);
+  border-image-slice: 1;
+}
+
+main h2::before {
+  content: initial;
+}
+
+main h2::after {
+  content: initial;
+}
+
+main table {
+  font-size: 0.7rem;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+main table th {
+  font-size: 0.6rem;
+  text-align: center;
+  padding: 5px 0;
+  background: linear-gradient(#00aaeb, #1e4584);
+  color: #fff;
+}
+
+main table tr td {
+  text-align: center;
+  padding: 3px;
+  margin: 0px;
+  border-bottom: 1px solid #979494;
+}
+
+main .table_sticky {
+  display: block;
+  overflow-y: scroll;
+  height: calc(80vh/2);
+}
+
+main .table_sticky thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.btn-parent {
+  height: 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 60px;
+  margin-top: 40px;
+  padding-top: 5px;
+  font-weight: bold;
+  background: linear-gradient(#00aaeb, #1e4584);
+  transform: skew(-15deg);
+}
+
+.btn-parent a {
+  color: white;
+  padding: 5px 53px;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    background: transparent;
+  }
+  main section h2 {
+    width: 550px;
+  }
+  main section table {
+    margin: 0 30%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+  main section table tr th {
+    background: linear-gradient(#00aaeb, #1e4584);
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  main section table tr td {
+    height: 2rem;
+    color: black;
+    border-bottom: 1px solid #979494;
+    padding: 10px 0;
+  }
+  main section .btn-parent {
+    width: 550px;
+    margin: 30px auto;
+  }
+  main section .btn-parent a {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=list.css.map */

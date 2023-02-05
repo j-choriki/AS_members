@@ -1,0 +1,238 @@
+$color :  linear-gradient(#00aaeb,#1e4584);
+
+main{
+    height: 90vh; 
+    .section{
+      h2{
+        text-align: center;
+        font-size: 1.3rem;
+        margin: 50px auto;
+        span{
+            display: block;
+        }
+    }
+    }
+    table{
+        font-size:1rem;
+        border-collapse: separate;
+        margin: 0 auto;
+     
+        th{
+            text-align: center;
+            padding-bottom: 5px;
+        }
+        tr{
+            td{ 
+                text-align: center;
+                padding:3px;
+                margin: 0px;
+            }
+        }
+    }
+    .table_sticky {
+      display: block;
+      overflow-y: scroll;
+      height: calc(80vh/2);
+      
+      thead {
+          th{
+              position: sticky;
+              top: 0;
+              z-index: 1;
+          }
+      }
+  }
+    #grade{
+     margin-bottom: 20px;
+    }
+   #openModal{
+      position: fixed;
+      bottom: 20%;
+      right: 10%;
+      
+      i{
+        font-size:2.3rem;
+        padding: 30%;
+        border-radius: 20px;
+        background:linear-gradient(#00aaeb,#1e4584) ;
+        color: #fff;
+      }
+    }
+
+}
+.btn-parent{
+    margin: 30px auto;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.2rem; 
+    width: 250px;  
+    padding-top: 5px;
+    font-weight: bold;
+    background:$color ;
+    transform: skew(-15deg);
+    color: #fff;
+    a{
+        padding: 3% 20%;
+    }
+}
+
+
+/* ==================================
+ モーダルCSS 
+ ================================== */
+
+/* 画面全面の背景色の適用 */
+.modalArea {
+  display: none;
+  position: fixed;
+  z-index: 10; /*サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* 全面背景のモーダル解除のエリア */
+  .modalBg {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(30,30,30,0.9);
+  }
+
+  /* モーダルウィンドウ */
+  
+  .modalWrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform:translate(-50%,-50%);
+      width: 50%;
+      max-width: 400px;
+      height: auto;
+      padding: 10px 30px;
+      background-color: #fff;
+
+      .modalContents{
+          h2{
+            width: 115px;
+            text-align: center;
+            font-size: 1rem;
+            margin: 20px 0;  
+          }
+
+          form{
+            // overflow: hidden;
+            label{
+              background-color: #d7d8e3;
+              padding: 3px;
+              border-radius: 10px;
+              select{
+                width: 110px;
+                font-size:0.8rem;
+                text-align: center;
+                
+              }
+            }
+            div{
+              margin :20px 0;
+              input{
+                text-align: center;
+                width: 115px;
+                background:$color;
+                color: #fff;
+                padding: 3px;
+                border-radius: 5px;
+              }
+            }
+            .btn-parent2{
+              height: 2rem;
+              width: 100px;
+              text-align: center;
+              font-size: 1rem;
+              margin-left: 10px;              
+              font-weight: bold;
+              background:linear-gradient(#00aaeb,#1e4584) ;
+              transform: skew(-15deg); 
+              color: #fff;
+            }
+          }
+      }
+
+      /* モーダル解除のアイコン */
+      .closeModal {
+          position: absolute;
+          top: 0.5rem;
+          right: 1rem;
+          cursor: pointer;
+      }
+  }
+  .grade{
+    height: 200px;
+  }
+}
+
+
+/* ==================================
+モーダルfin 
+================================== */
+
+
+@media screen and ( min-width:1024px ){
+  main{
+    background: transparent;
+    section{
+        table{
+            caption{
+                color: black;
+                margin: 50px;
+            }
+            width: 20%;
+            border-collapse: collapse;
+            font-size:1.1rem;
+            color:#fff;
+            tr{
+                th{
+                    background: $color;
+                    padding: 10px;
+                }
+                td{
+                    height: 2rem;
+                    color: black;
+                    border-bottom: 1px solid rgb(151, 148, 148);
+                    padding: 10px 0;
+                }
+            }
+        }
+        .btn-parent{
+            width: 550px;
+            margin: 30px auto;
+            a{
+                padding: 0;
+            }
+        }
+    }
+      .modalArea .modalWrapper .modalContents h2 {
+        width: 310px;
+        text-align: center;
+        font-size: 1rem;
+        margin: 20px 0;
+      }
+
+  
+      .grade{
+        li{
+          font-size: 1.3rem;
+          text-align: center;
+        }
+      }
+      .modalArea .grade {
+        height: 228px;
+    }
+    #source{
+      width: 305px;
+    }
+    #serch{
+      width: 305px;
+    }
+  }
+ 
+}

@@ -1,0 +1,68 @@
+header{
+    background:linear-gradient(#00aaeb,#1e4584) ;
+    font-size:40px;
+    text-align: center; 
+    height: 10vh;
+    color: #fff;
+    padding-top: 10px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Martel', serif;
+
+}  
+
+main{
+    height: 100vh;
+     // HALロゴへの指示
+     background: url(../img/logo.png) no-repeat;
+     background-size: 90%;
+     background-position:50%;
+     background-color:rgba(255,255,255,0.8);
+     background-blend-mode:lighten;
+     h2 {
+        text-align: center; 
+        position: relative;
+        padding: 1rem .5rem;
+        width: 60%;
+        margin: 0 auto;
+    }
+      
+      h2:before,
+      h2:after {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        content: '';
+        background-image: -webkit-gradient(linear, right top, left top, from(#00aaeb), to(#1e4584));
+        background-image: -webkit-linear-gradient(right, #00aaeb 0%, #1e4584 100%);
+        background-image: linear-gradient(to left, #00aaeb 0%, #1e4584 100%);
+      }
+      
+      h2:before {
+        top: 0;
+      }
+      
+      h2:after {
+        bottom: 0;
+    }
+}
+
+footer{
+    position: absolute;
+    bottom: 10px;
+    width: 100vw;
+    text-align:center;
+    color: black;
+}
+
+// 以下webサイトのデザイン
+@media screen and ( min-width:1024px ){
+
+  footer{
+    background:linear-gradient(#00aaeb,#1e4584);
+    bottom: 0;
+    height:40px;
+    line-height: 40px;
+    color:#fff;
+  }
+}

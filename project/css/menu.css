@@ -1,0 +1,82 @@
+header {
+  background: linear-gradient(#00aaeb, #1e4584);
+  font-size: 40px;
+  text-align: center;
+  height: 10vh;
+  color: #fff;
+  padding-top: 10px;
+}
+
+body {
+  height: 100vh;
+  background: url(../img/logo.png) no-repeat;
+  background-size: 90%;
+  background-position: 50%;
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+}
+
+body section h2 {
+  margin-top: 15%;
+  font-size: 1.5rem;
+}
+
+body section ul {
+  margin-top: 100px;
+}
+
+body section ul li {
+  height: 3rem;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 20px;
+  padding-top: 10px;
+  font-weight: bold;
+  background: linear-gradient(#00aaeb, #1e4584);
+}
+
+body section ul li a {
+  color: white;
+}
+
+body section ul .btn-parent {
+  transform: skew(-15deg);
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100vw;
+  text-align: center;
+  color: black;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background: transparent;
+  }
+  body section h2 {
+    margin: 100px auto;
+    width: 300px;
+    border-top: 4px solid #00aaeb;
+    border-bottom: 4px solid #00aaeb;
+    border-image: linear-gradient(to left, #00aaeb 0%, #1e4584 100%);
+    border-image-slice: 1;
+  }
+  body section h2::before {
+    content: initial;
+  }
+  body section h2::after {
+    content: initial;
+  }
+  body section ul li {
+    margin: 30px 370px;
+  }
+  body section ul li a {
+    padding: 10px 100px;
+  }
+  body footer p {
+    color: white;
+  }
+}
+/*# sourceMappingURL=menu.css.map */

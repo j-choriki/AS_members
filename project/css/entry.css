@@ -1,0 +1,185 @@
+@charset "UTF-8";
+main {
+  background: linear-gradient(#00aaeb, #1e4584);
+  height: 81vh;
+  margin-top: 50px;
+  position: relative;
+  color: white;
+}
+
+main section {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  /* hoverした後のボタンの形状 */
+  /* ボタンの中のテキスト */
+  /* ここから追記 */
+  /* 影の設定 */
+  /* hover際にY軸に4pxずらす */
+}
+
+main section h2 {
+  font-size: 1.5rem;
+}
+
+main section form .wf-notosansjapanese {
+  font-family: "Noto Sans JP";
+}
+
+main section form label {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+}
+
+main section form label input {
+  display: block;
+  border-bottom: 1px solid black;
+}
+
+main section form .flex {
+  display: flex;
+  justify-content: center;
+}
+
+main section form .flex div {
+  margin-right: 20px;
+}
+
+main section form label {
+  position: relative;
+}
+
+main section form label select {
+  border: 1px solid black;
+  font-size: 1rem;
+}
+
+main section form label .cp_ipselect {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+main section form label .cp_ipselect select {
+  width: 100%;
+  padding-right: 1em;
+  cursor: pointer;
+  text-indent: 0.01px;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: none;
+  box-shadow: none;
+  appearance: none;
+}
+
+main section form label .cp_ipselect select::-ms-expand {
+  display: none;
+}
+
+main section form label .cp_ipselect.cp_sl05 {
+  position: relative;
+  border-radius: 2px;
+  border-radius: 50px;
+  background: linear-gradient(#00aaeb, #1e4584);
+}
+
+main section form label .cp_ipselect.cp_sl05::before {
+  position: absolute;
+  top: 0.8em;
+  right: 0.8em;
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #ffffff;
+  pointer-events: none;
+}
+
+main section form label .cp_ipselect.cp_sl05 select {
+  padding: 8px 38px 8px 8px;
+  color: #ffffff;
+}
+
+main section form .caution {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.9rem;
+}
+
+main section .btn03 {
+  /* 影を起点とするためrelativeを指定 */
+  position: relative;
+  /* ボタンの形状 */
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  background: transparent;
+  border-radius: 25px;
+  border: solid 1px #333;
+  /* アニメーションの指定 */
+  transition: all 0.3s ease;
+}
+
+main section .btn03:hover {
+  border-color: transparent;
+}
+
+main section .btn03 span {
+  position: relative;
+  /* z-indexの数値を上げて文字を背景よりも手前に表示 */
+  z-index: 2;
+  /* テキストの形状 */
+  display: block;
+  padding: 10px 15px;
+  background: #00aaeb;
+  border-radius: 25px;
+  color: white;
+  /* アニメーションの指定 */
+  transition: all 0.3s ease;
+}
+
+main section .pushdown:before {
+  content: "";
+  /* 絶対配置で影の位置を決める */
+  position: absolute;
+  z-index: 1;
+  top: 4px;
+  left: 0;
+  /* 影の形状 */
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #333;
+}
+
+main section .pushdown:hover span {
+  background-color: #333;
+  color: #fff;
+  transform: translateY(4px);
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    background: transparent;
+    background: url(../img/AS_logo.jpeg) no-repeat;
+    background-position: 30% 25%;
+  }
+  main section {
+    background: linear-gradient(#00aaeb, #1e4584);
+    padding: 45px 50px;
+    border-radius: 15px;
+    top: 0;
+    left: 60%;
+  }
+  main section::before {
+    content: "各項目を入力";
+    color: yellow;
+  }
+}
+/*# sourceMappingURL=entry.css.map */
