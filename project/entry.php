@@ -37,19 +37,20 @@ if(isset($_POST['entry']) && $_POST['entry'] === "entry"){
         $color = 'red'; 
     }else{
         $csv = file_read('./csv/member.csv');
+        if(count($csv) === 0){
+            $_SESSION['no'] = $no;
+            $page_jamp++;
+        }
         // 登録されていないかチェック
          for($i = 0; $i < count($csv); $i++){
             $val = $csv[$i];
-            if($val[0] == $no) {
+            if((string)$val[0] == $no) {
                 $no_msg = "登録されています";
                 break;
             } else {
                 //　該当なければ学籍番号を登録
                 $_SESSION['no'] = $no;
-                // $page_jamp++;
-                if($i == count($csv)){
-                    $page_jamp++;
-                }
+                $page_jamp++;
             }
          }
     }
@@ -66,6 +67,7 @@ if(isset($_POST['entry']) && $_POST['entry'] === "entry"){
     // パスワード
     if($pass !== "") {
         $_SESSION['pass'] = $pass;
+        $page_jamp++;
     } else {
         $pass_msg = "入力してください";
         $color = 'red';
@@ -98,8 +100,9 @@ if(isset($_POST['entry']) && $_POST['entry'] === "entry"){
         $color = 'red';
     }
     
+
     // 全て入力完了しればページ遷移
-    if($page_jamp === 4){
+    if($page_jamp === 6){
         header("Location:confirm.php");
         exit;
     }
