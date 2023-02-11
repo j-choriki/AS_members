@@ -11,7 +11,7 @@ header{
 }  
 
 main{
-    height: 100vh;
+    // height: 100vh;
      // HALロゴへの指示
      background: url(../img/logo.png) no-repeat;
      background-size: 90%;
@@ -49,7 +49,7 @@ main{
 
 footer{
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     width: 100vw;
     text-align:center;
     color: black;

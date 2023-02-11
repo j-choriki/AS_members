@@ -1,8 +1,4 @@
 @charset "UTF-8";
-main {
-  height: 90vh;
-}
-
 main .section h2 {
   text-align: center;
   font-size: 1.3rem;
@@ -13,30 +9,37 @@ main .section h2 span {
   display: block;
 }
 
-main table {
+main .flex {
+  display: flex;
+}
+
+main .flex table {
   font-size: 1rem;
-  border-collapse: separate;
+  border-collapse: collapse;
   margin: 0 auto;
 }
 
-main table th {
+main .flex table th {
+  font-size: 0.8rem;
   text-align: center;
-  padding-bottom: 5px;
+  padding: 5px 0;
+  background: linear-gradient(#00aaeb, #1e4584);
+  color: #fff;
 }
 
-main table tr td {
+main .flex table tr td {
   text-align: center;
-  padding: 3px;
-  margin: 0px;
+  padding: 10px;
+  border-bottom: 1px solid #979494;
 }
 
-main .table_sticky {
+main .flex .table_sticky {
   display: block;
   overflow-y: scroll;
   height: calc(80vh/2);
 }
 
-main .table_sticky thead th {
+main .flex .table_sticky thead th {
   position: sticky;
   top: 0;
   z-index: 1;

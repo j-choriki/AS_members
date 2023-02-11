@@ -34,7 +34,7 @@
              
 
             <label for="pass">パスワード
-                <input type="password" name="pass" id="pass" value="<?php echo $pass;?>"require>
+                <input type="password" name="pass" id="pass" require>
                 <div class="<?php echo $color;?> caution"><?php echo $pass_msg;?></div>  
             </label>
             

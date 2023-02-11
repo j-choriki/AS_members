@@ -45,10 +45,9 @@ body section ul .btn-parent {
 
 footer {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   width: 100vw;
   text-align: center;
-  color: black;
 }
 
 @media screen and (min-width: 1024px) {

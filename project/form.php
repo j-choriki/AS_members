@@ -1,9 +1,13 @@
 <?php 
 //関数の読み込み
 require_once('./function.php');
-auto_timeup();
+// auto_timeup();
 // 変数の初期化
 $data = "";
+// 配列の初期化
+$plan = [];
+
+// 日付ファイルのパス
 $plan_file = './csv/plan.csv';
 
 // 作成ボタンを押されたら
@@ -22,14 +26,17 @@ if(isset($_GET['btn']) && $_GET['btn'] === 'btn') {
 // 日付情報のファイルの読み込み
 $plan_date = file_read($plan_file);
 
-// 取得日時に「月日」を追加
-$plan = change_date($plan_date);
-
-// 取得日時をそのまま格納する配列を作成(例: 20220924)
-foreach($plan_date as $defo_column){
-    foreach($defo_column as $defo){
-        $defo_list[] = $defo;
-    } 
+if(count($plan_date) != 0){
+    // 取得日時に「月日」を追加
+    $plan = change_date($plan_date);
+    // 取得日時をそのまま格納する配列を作成(例: 20220924)
+    foreach($plan_date as $defo_column){
+        foreach($defo_column as $defo){
+            $defo_list[] = $defo;
+        } 
+    }
+}else{
+    $plan = [];
 }
 
 // viewを読み込む

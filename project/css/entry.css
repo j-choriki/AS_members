@@ -1,7 +1,7 @@
 @charset "UTF-8";
 main {
   background: linear-gradient(#00aaeb, #1e4584);
-  height: 81vh;
+  height: 100vh;
   margin-top: 50px;
   position: relative;
   color: white;
@@ -84,6 +84,8 @@ main section form label .cp_ipselect.cp_sl05 {
   border-radius: 2px;
   border-radius: 50px;
   background: linear-gradient(#00aaeb, #1e4584);
+  padding: 0.5rem;
+  margin-top: 10px;
 }
 
 main section form label .cp_ipselect.cp_sl05::before {

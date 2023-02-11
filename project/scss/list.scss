@@ -18,42 +18,46 @@ main{
         border-image: linear-gradient(to left, #00aaeb 0%, #1e4584 100%);
         border-image-slice: 1;
     }
-    table{
-        font-size:0.7rem;
-        // border-collapse: separate;
-        border-collapse:collapse;
-        margin: 0 auto;
-        th{
-            font-size: 0.6rem;
-            text-align: center;
-            padding: 5px 0;
-            background: $color;
-            color: #fff;    
-            
-        }
-        tr{
-            td{ 
-                text-align: center;
-                padding:3px;
-                margin: 0px;
-                border-bottom: 1px solid rgb(151, 148, 148);
-            }
-        }
-    }
-    .table_sticky {
-        display: block;
-        overflow-y: scroll;
-        height: calc(80vh/2);
-        
-        thead {
+    .flex{
+        display: flex;
+        table{
+            font-size:1.2rem;
+            // border-collapse: separate;
+            border-collapse:collapse;
+            margin: 0 auto;
             th{
-                position: sticky;
-                top: 0;
-                z-index: 1;
+                font-size: 0.8rem;
+                text-align: center;
+                padding: 5px 0;
+                background: $color;
+                color: #fff;    
+                
+            }
+            tr{
+                td{ 
+                    text-align: center;
+                    padding:10px;
+                    
+                    border-bottom: 1px solid rgb(151, 148, 148);
+                }
             }
         }
+        .table_sticky {
+            display: block;
+            overflow-y: scroll;
+            height: calc(80vh/2);
+            
+            thead {
+                th{
+                    position: sticky;
+                    top: 0;
+                    z-index: 1;
+                }
+            }
+        }
+    
     }
-
+   
 }
 .btn-parent{
     height: 2rem;

@@ -16,13 +16,13 @@
 <main>
     <section>
         <h2>メンバー一覧</h2>
+        <div class="flex">
         <table class="table_sticky">
             <thead>
                 <tr>
                     <th>学籍番号</th>
                     <th>氏名</th>
                     <th>担当AS</th>
-                    <th>自学科</th>
                     <th>学年</th>
                     <th>参加回数</th>
                 </tr>
@@ -35,6 +35,7 @@
                 </tr>
             <?php endforeach; ?>
         </table>
+        </div>
         <div class="btn-parent"><a href="./menu.php">メニューへ戻る</a></div>
     </section>
 </main>

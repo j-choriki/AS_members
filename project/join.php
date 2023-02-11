@@ -1,8 +1,10 @@
 <?php
 // 関数の読み込み
 require_once('./function.php');
+// セッションスタート
+session_start();
 
-auto_timeup();
+// auto_timeup();
 
 // 学籍番号を取得
 $id = $_SESSION['id'];
@@ -19,8 +21,9 @@ $day = change_day($date);
 $display1 = "show";
 $display2 = "none";
 
-// 指定日のリストに自分の情報があるか確認
+// 指定日のリストに指定日が存在しているか確認
 $confirm_file = file_read('./csv/'. $date .'/' . $date .'.csv');
+
 foreach($confirm_file as $data){
     //指定日にすでにデータがあれば表示しない、なければ表示するために変数の入れ替えを行う
     if($data[0] === $id){ 

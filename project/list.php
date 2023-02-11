@@ -9,7 +9,7 @@ $member_list = file_read('./csv/member.csv');
 
 foreach($member_list as $val){
     foreach($val as $key => $data){
-        if($key !== 2){
+        if($key !== 2 && $key !== 4){//パスワードを表示からぬくため
             $list[] = $data;
         }
     }

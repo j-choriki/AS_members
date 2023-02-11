@@ -21,8 +21,8 @@
             <h2>メンバーリスト<span>メニュー</span></h2>
             <ul>
                 <li class="btn-parent"><a href="./list.php">ASメンバーList</a></li>
-                <?php foreach($list as $val):?>
-                    <li class="btn-parent"><a href="./show_list.php?date=<?php echo $val[0]?>"><?php echo $val[0]; ?></a></li>
+                <?php foreach($date_list as $key => $val):?>
+                    <li class="btn-parent"><a href="./show_list.php?date=<?php echo $list[$key][0]?>"><?php echo $val; ?></a></li>
                 <?php endforeach; ?>
             </ul>
         </section>

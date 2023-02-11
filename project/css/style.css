@@ -44,10 +44,11 @@ h2:after {
 
 footer {
   position: absolute;
-  bottom: 10px;
+  background: linear-gradient(#00aaeb, #1e4584);
   width: 100vw;
   text-align: center;
   color: white;
+  padding: 10px;
 }
 
 @media screen and (min-width: 1024px) {

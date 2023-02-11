@@ -10,7 +10,6 @@ header {
 }
 
 main {
-  height: 100vh;
   background: url(../img/logo.png) no-repeat;
   background-size: 90%;
   background-position: 50%;
@@ -46,7 +45,7 @@ main h2:after {
 
 footer {
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   width: 100vw;
   text-align: center;
   color: black;

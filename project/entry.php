@@ -16,6 +16,9 @@ $no = "";
 $name = "";
 $pass = "";
 
+// 学科名を入れた配列
+
+
 // 入力確定ボタンが押されたとき処理
 if(isset($_POST['entry']) && $_POST['entry'] === "entry"){
     
@@ -28,8 +31,6 @@ if(isset($_POST['entry']) && $_POST['entry'] === "entry"){
     $grade = $_POST['grade'];
 
     $page_jamp = 0;
-
-    // 各値の入力値チェックの後セッションに値を登録
 
     // 学籍番号
     if(!is_numeric($no)){
@@ -47,7 +48,7 @@ if(isset($_POST['entry']) && $_POST['entry'] === "entry"){
             if((string)$val[0] == $no) {
                 $no_msg = "登録されています";
                 break;
-            } else {
+            }else{
                 //　該当なければ学籍番号を登録
                 $_SESSION['no'] = $no;
                 $page_jamp++;
@@ -109,14 +110,14 @@ if(isset($_POST['entry']) && $_POST['entry'] === "entry"){
 }
 
 // 入力確認から戻ってきたときの処理
-if(isset($_SESSION['no'])){
+// if(isset($_SESSION['no']) && isset($_SESSION['name']) && isset($_SESSION['AS_sub']) && isset($_SESSION['belomg']) && isset($_SESSION['grade'])){
+    if(isset($_SESSION['no']) && isset($_SESSION['name'])){
      // 値の受け取り
      $no = $_SESSION['no'];
      $name = $_SESSION['name'];
-     $pass = $_SESSION['pass'];
-     $AS_sub = $_SESSION['AS_sub'];
-     $belong = $_SESSION['belong'];
-     $grade = $_SESSION['grade'];
+    //  $AS_sub = $_SESSION['AS_sub'];
+    //  $belong = $_SESSION['belong'];
+    //  $grade = $_SESSION['grade'];
 }
 
 

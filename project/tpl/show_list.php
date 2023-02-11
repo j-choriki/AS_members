@@ -48,6 +48,7 @@
     <!-- ここまでモーダルエリア -->
     <section class="section">
       <h2><?php echo $date;?><span>メンバ</span></h2>
+      <div class="flex">
         <table class="table_sticky">
           <thead>
             <tr>
@@ -64,6 +65,7 @@
                 </tr>
             <?php endforeach; ?>
         </table>
+        </div>
     </section>
     
     <!-- 学年別人数の表示 -->

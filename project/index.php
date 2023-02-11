@@ -37,11 +37,7 @@
         }
     }
 
-    //会員登録が押された場合
-    elseif(isset($_POST['button']) && $_POST['button'] === 'entry'){
-        header('Location:./entry.php');
-        exit;
-    }
+ 
     
     // viewの読み込み
     require_once('./tpl/index.php');

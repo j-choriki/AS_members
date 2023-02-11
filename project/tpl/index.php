@@ -33,7 +33,7 @@
                 </label>    
 
                 <button name="button" value="login" class="btn03 pushdown"><span>ログイン</span></button>
-                <button name="button" value="entry" class="btn03 pushdown"><span>メンバー登録</span></button>
+                <div class="entry"><a href="./entry.php"><span>メンバー登録</span>はこちら</a></div>
             </form>
         </section>
     </main>

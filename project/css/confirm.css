@@ -22,6 +22,10 @@ main section table tr {
   height: 40px;
 }
 
+main section table tr td:nth-of-type(2) {
+  padding-left: 15px;
+}
+
 main section .flex {
   display: flex;
   justify-content: center;

@@ -16,6 +16,11 @@ main{
         table{
             tr{
                 height: 40px;
+                td{
+                    &:nth-of-type(2){
+                        padding-left:15px;
+                    }
+                }
             }
         }
         .flex{

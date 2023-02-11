@@ -20,34 +20,37 @@ main h2::after {
   content: initial;
 }
 
-main table {
-  font-size: 0.7rem;
+main .flex {
+  display: flex;
+}
+
+main .flex table {
+  font-size: 1.2rem;
   border-collapse: collapse;
   margin: 0 auto;
 }
 
-main table th {
-  font-size: 0.6rem;
+main .flex table th {
+  font-size: 0.8rem;
   text-align: center;
   padding: 5px 0;
   background: linear-gradient(#00aaeb, #1e4584);
   color: #fff;
 }
 
-main table tr td {
+main .flex table tr td {
   text-align: center;
-  padding: 3px;
-  margin: 0px;
+  padding: 10px;
   border-bottom: 1px solid #979494;
 }
 
-main .table_sticky {
+main .flex .table_sticky {
   display: block;
   overflow-y: scroll;
   height: calc(80vh/2);
 }
 
-main .table_sticky thead th {
+main .flex .table_sticky thead th {
   position: sticky;
   top: 0;
   z-index: 1;

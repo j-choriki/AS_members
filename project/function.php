@@ -1,38 +1,4 @@
 <?php
-// require_once('../config.php');
-
-/**
- * データベース登録
- * @param $name 氏名
- * @param $AS_name 所属AS名
- * @param $belong 所属学科
- * @param $join_cnt 参加回数
- */
-// function join_DB($name,$AS_name,$belong,$join_cnt){
-//     $link = mysqli_connect(HOST,USER_ID,PASSWORD,DB_NAME); // DB情報の読み込み
-//     mysqli_set_charset($link,'utf8'); // 文字コードの設定  
-//     $sql = "INSERT INTO member($name,$AS_name,$belong,$join_cnt) VALUES('".$name."','".$AS_name."','".$belong."','".$join_cnt.");";
-//     mysqli_query($link,$sql);
-//     mysqli_close($link);//DBクローズ
-// }
-
-/**
- * データの全件取得
- */
-
-// function show_DB(){
-//     $link = mysqli_connect(HOST,USER_ID,PASSWORD,DB_NAME); // DB情報の読み込み
-//     mysqli_set_charset($link,'utf8'); // 文字コードの設定 
-//     $result = mysqli_query($link,"SELECT * FROM member ORDER BY join_cnt;");
-//     // 配列の初期化
-//     $list = [];
-//     while($row = mysqli_fetch_array($result)){
-//         $list[] = $row;
-//     }
-//     mysqli_close($link);//DBクローズ
-//     return $list;
-// }
-
 /**
  * ファイルデータの読み込み
  * @param $file_pass ファイルディレクトリ
@@ -41,12 +7,14 @@
 
 function file_read($file_pass){
     $list = [];
-    $fp = fopen($file_pass,'r');
-    while($row = fgets($fp)){
-        $row  = str_replace("\r","",$row); //改行の\rを置き換える
-        $row  = str_replace("\n","",$row); //改行の\nを置き換える
-        // 上記二つを書くことで改行コードすべて対応する
-        $list[] = explode(',',$row);//二次元配列となる
+    if (file_exists($file_pass)) {
+        $fp = fopen($file_pass,'r');
+        while($row = fgets($fp)){
+            $row  = str_replace("\r","",$row); //改行の\rを置き換える
+            $row  = str_replace("\n","",$row); //改行の\nを置き換える
+            // 上記二つを書くことで改行コードすべて対応する
+            $list[] = explode(',',$row);//二次元配列となる
+        } 
     }
     return $list;
 }
