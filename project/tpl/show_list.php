@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="./css/destyle.css">
 <link rel="stylesheet" href="./css/style2.css">
 <link rel="stylesheet" href="./css/show_list.css">
+<link rel="stylesheet" href="./css/humberger.css">
 <!-- font-awsome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
@@ -14,8 +15,18 @@
 </head>
 <body>
 <header>
-    <h1>AS Members</h1>
+    <h1>AS members</h1>
 </header>
+   <!-- ハンバーガーメニュー -->
+   <div class="openbtn"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+            <div class="g-nav-list" id="logout">
+                <ul>
+                    <li><a href="./menu.php?action=logout">ログアウト</a></li>
+                </ul>
+            </div>
+        </nav>
+
 <main>
     <section id="modalArea" class="modalArea">
     <!-- ここからモーダルエリア -->
@@ -47,7 +58,7 @@
     </section>
     <!-- ここまでモーダルエリア -->
     <section class="section">
-      <h2><?php echo $date;?><span>メンバ</span></h2>
+      <h2><?php echo $change[0];?><span>メンバー</span></h2>
       <div class="flex">
         <table class="table_sticky">
           <thead>
@@ -93,11 +104,10 @@
     <!-- 検索ボタン -->
     <button id="openModal"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
 </main>
-<footer>
-    <p>hal Assinstant Staff</p>
-</footer>
+
 </body>
 <script src="./js/jquery-3.6.0.min.js"></script>
 <script src="./js/script.js"></script>
+<script src="./js/home.js"></script>
 <!-- <script src="./js/selectTag.js"></script> -->
 </html>

@@ -120,6 +120,7 @@ function check($val){
             $data = str_replace($year,'',$data);
             // 「月」の文字を特定文字数のところに追加
             $data = substr_replace($data, '月', 2, 0);
+            $data = ltrim($data, 0);
             // 末尾に「日」を追加
             $data .= '日';
             $update_date[] = $data;
@@ -144,5 +145,17 @@ function change_day($day){
 
     return $day;
 }
+
+ /**
+  * ログアウト時の処理
+  */
+
+  function logout(){
+    session_start();
+    $_SESSION = [];
+    session_destroy();
+    header('location:./index.php');
+    exit;
+  }
 
 ?>

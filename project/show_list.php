@@ -5,6 +5,9 @@ require_once('./function.php');
 // auto_timeup();
 
 $date = $_GET['date'];
+$change_list[][] = $date;
+$change = change_date($change_list);
+
 
 // 配列・変数の初期化
 $date_list = [];

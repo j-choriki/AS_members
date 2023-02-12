@@ -136,39 +136,35 @@ main{
         background: transparent;
         padding: 0;
        section{
-        h2{
-            margin:100px auto;
-            width: 300px;
-            &::before{
-                content:initial;
+            h2{
+                margin:100px auto;
+                width: 300px;
+                &::before{
+                    content:initial;
+                }
+                &::after{
+                    content:initial;
+                }
+                border-top: 4px solid #00aaeb;
+                border-bottom: 4px solid #00aaeb;
+                border-image: linear-gradient(to left, #00aaeb 0%, #1e4584 100%);
+                border-image-slice: 1;    
             }
-            &::after{
-                content:initial;
+            form{
+                margin-top: 50px;
+                padding-top: 50px;
+                .btn03{
+                    margin: -50px auto;
+                }
             }
-            border-top: 4px solid #00aaeb;
-            border-bottom: 4px solid #00aaeb;
-            border-image: linear-gradient(to left, #00aaeb 0%, #1e4584 100%);
-            border-image-slice: 1;    
-        }
-        form{
-            margin-top: 50px;
-            padding-top: 50px;
-        
-        }
-        .btn-parent{
-            margin: 0;
-            width: 400px;
-            margin: 0 auto;
-          
-        }
+            .btn-parent{ 
+                width: 400px;
+                margin: -90px auto;
+            }
        }
+       
     }
-    footer{
-      background:linear-gradient(#00aaeb,#1e4584);
-      bottom: 0;
-      height:40px;
-      line-height: 40px;
-    }
+ 
   
     
 }

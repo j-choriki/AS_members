@@ -133,6 +133,7 @@ main{
             width: 100px;
             text-align: center;
             font-size: 1rem;
+            margin-bottom: 0;
               
           }
 
@@ -179,11 +180,13 @@ main{
 @media screen and ( min-width:1024px ){
   body{
       main{
+        height: 0;
         background: transparent;
         padding: 0;
         h2{
           // margin:100px auto;
           width: 300px;
+          margin-top: 80px;
         }
         #form{
           text-align:center;
@@ -191,6 +194,12 @@ main{
         .btn-parent{
           width: 400px;
           margin: 30px auto;
+        }
+
+        .modalContents{
+          h2{
+            margin: 30px auto 30px auto;
+          }
         }
       }
       

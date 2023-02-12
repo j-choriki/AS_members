@@ -7,13 +7,22 @@
 <link rel="stylesheet" href="./css/destyle.css">
 <link rel="stylesheet" href="./css/style2.css">
 <link rel="stylesheet" href="./css/join.css">
+<link rel="stylesheet" href="./css/humberger.css">
 <title>参加確認</title>
 </head>
 <body>
-    <header>
-        <h1>AS members</h1>
-    </header>
-
+<header>
+    <h1>AS members</h1>
+</header>
+  <!-- ハンバーガーメニュー -->
+  <div class="openbtn"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+            <div class="g-nav-list" id="logout">
+                <ul>
+                    <li><a href="./menu.php?action=logout">ログアウト</a></li>
+                </ul>
+            </div>
+        </nav>
     <main>
         <section>
             <h2><?php echo $day;?><span>参加確認フォーム</span></h2>
@@ -26,9 +35,7 @@
         </section>
     </main>
 
-    <footer>
-        <p>hal Assinstant Staff</p>
-    </footer>
-
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/home.js"></script>
 </body>
 </html>

@@ -30,9 +30,7 @@
         </section>
     </main>
 
-    <footer>
-        <p>hal Assinstant Staff</p>
-    </footer>
+  
 <!-- <script></script> -->
 </body>
 </html>

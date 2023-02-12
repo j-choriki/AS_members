@@ -157,16 +157,12 @@ main section .pushdown:hover span {
     margin-top: 50px;
     padding-top: 50px;
   }
-  main section .btn-parent {
-    margin: 0;
-    width: 400px;
-    margin: 0 auto;
+  main section form .btn03 {
+    margin: -50px auto;
   }
-  footer {
-    background: linear-gradient(#00aaeb, #1e4584);
-    bottom: 0;
-    height: 40px;
-    line-height: 40px;
+  main section .btn-parent {
+    width: 400px;
+    margin: -90px auto;
   }
 }
 /*# sourceMappingURL=join.css.map */

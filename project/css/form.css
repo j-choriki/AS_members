@@ -135,6 +135,7 @@ main .btn-parent a {
   width: 100px;
   text-align: center;
   font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .modalArea .modalWrapper .modalContents form div {
@@ -169,11 +170,13 @@ main .btn-parent a {
 ================================== */
 @media screen and (min-width: 1024px) {
   body main {
+    height: 0;
     background: transparent;
     padding: 0;
   }
   body main h2 {
     width: 300px;
+    margin-top: 80px;
   }
   body main #form {
     text-align: center;
@@ -181,6 +184,9 @@ main .btn-parent a {
   body main .btn-parent {
     width: 400px;
     margin: 30px auto;
+  }
+  body main .modalContents h2 {
+    margin: 30px auto 30px auto;
   }
 }
 /*# sourceMappingURL=form.css.map */

@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="./css/destyle.css">
 <link rel="stylesheet" href="./css/style2.css">
 <link rel="stylesheet" href="./css/form.css">
+<link rel="stylesheet" href="./css/humberger.css">
 
 <!-- font-awsome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -30,9 +31,18 @@
 <title>参加フォーム</title>
 </head>
 <body>
-  <header>
-    <h1>AS memberss</h1>
-  </header>
+<header>
+    <h1>AS members</h1>
+</header>
+  <!-- ハンバーガーメニュー -->
+  <div class="openbtn"><span></span><span></span><span></span></div>
+        <nav id="g-nav">
+            <div class="g-nav-list" id="logout">
+                <ul>
+                    <li><a href="./menu.php?action=logout">ログアウト</a></li>
+                </ul>
+            </div>
+        </nav>
 
   <main>
     <section>
@@ -65,9 +75,8 @@
     <!-- モーダルエリアここまで -->
   </main>
 
-  <footer>
-    <p>hal Assinstant Staff</p>
-  </footer>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/home.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

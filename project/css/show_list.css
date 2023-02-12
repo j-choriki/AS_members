@@ -191,6 +191,7 @@ main #openModal i {
   main section table tr th {
     background: linear-gradient(#00aaeb, #1e4584);
     padding: 10px;
+    width: 150px;
   }
   main section table tr td {
     height: 2rem;

@@ -14,7 +14,8 @@ header{
     background-size: contain;
     background-position: 50% 5px;
     background-color:rgba(255,255,255,0.8);
-    background-blend-mode:lighten;
+    background-blend-mode:lighten;    
+    
 }
    
 h2 {
@@ -61,6 +62,6 @@ footer{
     background:linear-gradient(#00aaeb,#1e4584);
     bottom: 0;
     height:40px;
-    line-height: 40px;
+    // line-height: 40px;
   }
 }
