@@ -19,7 +19,7 @@
         <section>
             <p class="red">以下内容で入力は間違いありませんか？</p>
             <table>
-                   <tr><td>学籍番号</td><td><?php echo $no;?></td></tr>
+                   <tr><td>学籍番号</td><td><?php echo $id;?></td></tr>
                    <tr><td>氏名</td><td><?php echo $name;?></td></tr> 
                    <tr><td>担当AS</td><td><?php echo $AS_sub;?></td></tr> 
                    <tr><td>所属コース</td><td><?php echo $belong;?></td></tr> 

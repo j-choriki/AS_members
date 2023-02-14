@@ -21,9 +21,9 @@
             
             <form action="./entry.php" method="post">
 
-            <label for="no">学籍番号
-                <input type="text" name="no" id="no" value="<?php echo $no;?>" require maxlength="5">
-                <div class="<?php echo $color;?> caution"><?php echo $no_msg;?></div>
+            <label for="id">学籍番号
+                <input type="text" name="id" id="id" value="<?php echo $id;?>" require maxlength="5">
+                <div class="<?php echo $color;?> caution"><?php echo $id_msg;?></div>
             </label>
             
 
@@ -41,7 +41,11 @@
 
              <label for="AS_sub">AS学科
                 <select name="AS_sub" id="AS_sub" value="<?php echo $AS_sub;?>" class="cp_ipselect cp_sl05" require >
-                    <option value="" hidden>選択してください</option>
+                    <?php if(!empty($AS_sub)):?>
+                        <option value="<?php echo $AS_sub;?>"><?php echo $check_AS;?></option>
+                    <?php elseif($AS_sub == ''): ?>
+                        <option value="" hidden>選択してください</option>
+                    <?php endif; ?>
                     <option value="game_planning">ゲーム企画</option>
                     <option value="game_program">ゲームプログラム</option>
                     <option value="game_cg">ゲームCG</option>
@@ -56,7 +60,11 @@
                
             <label for="belong">所属学科
                 <select name="belong" id="belong" value="<?php echo $belong; ?>" class="cp_ipselect cp_sl05" require>
-                    <option value="" hidden>選択してください</option>
+                <?php if(!empty($belong)):?>
+                        <option value="<?php echo $belong;?>"><?php echo $check_belong;?></option>
+                    <?php elseif($belong == ''): ?>
+                        <option value="" hidden>選択してください</option>
+                    <?php endif; ?>
                     <option value="game_planning">ゲーム企画</option>
                     <option value="game_program">ゲームプログラム</option>
                     <option value="game_cg">ゲームCG</option>
@@ -71,7 +79,11 @@
 
             <label for="grade">学年
                 <select name="grade" id="grade" value="<?php echo $grade; ?>" class="cp_ipselect cp_sl05"require>
-                    <option value="" hidden>選択してください</option>
+                <?php if(!empty($grade)):?>
+                        <option value="<?php echo $grade;?>"><?php echo $grade;?></option>
+                    <?php elseif($grade == ''): ?>
+                        <option value="" hidden>選択してください</option>
+                    <?php endif; ?>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>

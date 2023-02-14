@@ -1,8 +1,9 @@
 <?php
 require_once("./function.php");
 session_start();
+
 // セッション登録された値を変数に代入
-$no = $_SESSION['no'];
+$id = $_SESSION['id'];
 $name = $_SESSION['name'];
 $pass = $_SESSION['pass'];
 $AS_sub = change_sub($_SESSION['AS_sub']);
@@ -13,7 +14,7 @@ $grade = $_SESSION['grade'];
 if(isset($_GET['reg']) && $_GET['reg'] === 'register'){
     // 登録データを配列に入れる
     $regist_list =[];
-    $regist_list[] = $no;
+    $regist_list[] = $id;
     $regist_list[] = $name;
     $regist_list[] = $pass;
     $regist_list[] = $AS_sub;
