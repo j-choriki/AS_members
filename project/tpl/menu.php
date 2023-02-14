@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/menu.css">
 <link rel="stylesheet" href="./css/humberger.css">
+<link rel="stylesheet" href="./css/fadeIn.css">
 <title>メニュー</title>
 </head>
 <body>
@@ -28,8 +29,8 @@
     <section>
         <h2>メニュー</h2>
         <ul>
-            <li class="btn-parent"><a href="./list_table.php">メンバ-リスト</a></li>
-            <li class="btn-parent"><a href="./form.php">参加フォーム</a></li>
+            <li class="btn-parent box fadeUp delay-time02 "><a href="./list_table.php">メンバ-リスト</a></li>
+            <li class="btn-parent box fadeUp delay-time04 "><a href="./form.php">参加フォーム</a></li>
         </ul>
     </section>
 

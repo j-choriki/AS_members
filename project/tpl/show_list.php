@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="./css/style2.css">
 <link rel="stylesheet" href="./css/show_list.css">
 <link rel="stylesheet" href="./css/humberger.css">
+<link rel="stylesheet" href="./css/fadeIn.css">
 <!-- font-awsome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
@@ -57,7 +58,7 @@
     </div>
     </section>
     <!-- ここまでモーダルエリア -->
-    <section class="section">
+    <section class="section box fadeUp2">
       <h2><?php echo $change[0];?><span>メンバー</span></h2>
       <div class="flex">
         <table class="table_sticky">
@@ -80,6 +81,7 @@
     </section>
     
     <!-- 学年別人数の表示 -->
+    
     <section id="modalArea2" class="modalArea">
     <!-- ここからモーダルエリア -->
     <div id="modalBg2" class="modalBg"></div>
@@ -99,8 +101,8 @@
     </div>
     </section>
     
-    <div class="btn-parent"><button id="openModal2">学年別人数一覧</button></div>
-    <div class="btn-parent"><a href="./menu.php"> メニューへ戻る</a></div>
+    <div class="btn-parent box fadeUp"><button id="openModal2">学年別人数一覧</button></div>
+    <div class="btn-parent box fadeUp"><a href="./menu.php"> メニューへ戻る</a></div>
     <!-- 検索ボタン -->
     <button id="openModal"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
 </main>

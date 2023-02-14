@@ -1,0 +1,49 @@
+/* スタート時に要素を透明にする */
+.box{
+    opacity: 0;
+}
+
+/* 動き自体の指定：今回はふわっ */
+.fadeUp{
+    animation-name:fadeUpAnime;
+    animation-duration:0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.fadeUp2{
+    animation-name:fadeUpAnime2;
+    animation-duration:0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+        transform: skew(-15deg);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+        transform: skew(-15deg);
+    }
+}
+@keyframes fadeUpAnime2{
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.delay-time02{
+    animation-delay: 0.2s;/* 遅延時間 */
+}
+
+.delay-time04{
+    animation-delay: 0.4s;/* 遅延時間 */
+}

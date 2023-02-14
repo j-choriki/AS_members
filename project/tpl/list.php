@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="./css/style2.css">
 <link rel="stylesheet" href="css/list.css">
 <link rel="stylesheet" href="./css/humberger.css">
+<link rel="stylesheet" href="./css/fadeIn.css">
 <title>AS一覧</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
             </div>
         </nav>
 <main>
-    <section>
+    <section class="box fadeUp2">
         <h2>メンバー一覧</h2>
         <div class="flex">
         <table class="table_sticky">

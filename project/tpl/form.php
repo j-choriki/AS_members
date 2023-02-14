@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="./css/style2.css">
 <link rel="stylesheet" href="./css/form.css">
 <link rel="stylesheet" href="./css/humberger.css">
+<link rel="stylesheet" href="./css/fadeIn.css">
 
 <!-- font-awsome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -48,11 +49,11 @@
     <section>
         <h2>スケジュール</h2>
         <?php foreach($plan as $key => $val):?>
-            <div class="btn-parent"><a href="./join.php?date=<?php echo $defo_list[$key];?>"><?php echo $val;?></a></div>
+            <div class="btn-parent box fadeUp"><a href="./join.php?date=<?php echo $defo_list[$key];?>"><?php echo $val;?></a></div>
         <?php endforeach;?>
     </section>
 
-    <div class="btn-parent"><a href="./menu.php">戻る</a></div>
+    <div class="btn-parent box fadeUp"><a href="./menu.php">戻る</a></div>
     
     <button id="openModal"><i class="fa-solid fa-calendar-days"></i></button>
 

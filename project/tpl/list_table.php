@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="./css/style2.css">
 <link rel="stylesheet" href="./css/list_table.css">
 <link rel="stylesheet" href="./css/humberger.css">
-
+<link rel="stylesheet" href="./css/fadeIn.css">
 <title>一覧メニュー</title>
 </head>
 <body>
@@ -29,9 +29,9 @@
         <section>
             <h2>メンバーリスト<span>メニュー</span></h2>
             <ul>
-                <li class="btn-parent"><a href="./list.php">ASメンバーList</a></li>
+                <li class="btn-parent box fadeUp"><a href="./list.php">ASメンバーList</a></li>
                 <?php foreach($date_list as $key => $val):?>
-                    <li class="btn-parent"><a href="./show_list.php?date=<?php echo $list[$key][0]?>"><?php echo $val; ?></a></li>
+                    <li class="btn-parent box fadeUp"><a href="./show_list.php?date=<?php echo $list[$key][0]?>"><?php echo $val; ?></a></li>
                 <?php endforeach; ?>
             </ul>
         </section>

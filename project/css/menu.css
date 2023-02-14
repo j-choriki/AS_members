@@ -33,13 +33,7 @@ body section ul li {
   padding-top: 10px;
   font-weight: bold;
   background: linear-gradient(#00aaeb, #1e4584);
-}
-
-body section ul li a {
   color: white;
-}
-
-body section ul .btn-parent {
   transform: skew(-15deg);
 }
 

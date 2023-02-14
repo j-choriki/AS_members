@@ -32,16 +32,19 @@ body{
                 padding-top: 10px;
                 font-weight: bold;
                 background:linear-gradient(#00aaeb,#1e4584) ;
-                a{
-                    color: white;
+                color:white;
+                transform: skew(-15deg);
+                
                 }
             }
-            .btn-parent{
-                transform: skew(-15deg);
-            }
+           
         }
     }
-}
+
+
+
+
+
 
 footer{
     position: absolute;
